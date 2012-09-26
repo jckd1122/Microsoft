@@ -23,8 +23,6 @@ public class elevator_Scheduler{
 
     public void schedule2(int[] nPerson,int N){
         int sum = 0;
-        int lSum = 0;
-        int hSum = 0;
         int lPPL = nPerson[1];  //not including the current ppl
         int hPPL = 0;           //current ppl to the end
         nTargetFloor = 1;
@@ -32,8 +30,8 @@ public class elevator_Scheduler{
             minSumFloor += nPerson[i]*(i-1);
             hPPL += nPerson[i];
         }
-        lSum = 0;
-        hSum = minSumFloor;
+        int lSum = 0;
+        int hSum = minSumFloor;
         
         for(int i = 2; i <= N;++i){
             lSum += lPPL;
