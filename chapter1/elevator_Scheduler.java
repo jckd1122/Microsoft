@@ -44,6 +44,8 @@ public class elevator_Scheduler{
                 minSumFloor = sum;
                 nTargetFloor = i;
             }
+            else
+                break;
         }
 
     }
